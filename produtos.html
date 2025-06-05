@@ -1,0 +1,319 @@
+<!-- Página de Produtos da Melody Store -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo de produtos musicais da Melody Store - CDs, vinis, álbuns e roupas">
+    <meta name="keywords" content="CDs, vinis, álbuns, roupas musicais, produtos, catálogo">
+    <meta name="author" content="Desenvolvido por [Seu Nome]">
+    <title>Produtos - Melody Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .produto-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .produto-card .preco {
+            margin-top: auto;
+            padding-top: 1rem;
+            text-align: center;
+            border-top: 1px solid #533a71;
+        }
+
+        /* Padroniza o tamanho de todas as imagens dos produtos */
+        .produto-image img {
+            width: 100%;            /* Garante que ocupe toda a largura do card */
+            height: 300px;          /* Altura fixa para padronizar */
+            object-fit: cover;     /* Corta a imagem proporcionalmente sem distorcer */
+            border-radius: 10px;   /* Borda arredondada para visual uniforme */
+        }
+
+           /* Estilo para o botão de compra */
+        .btn-comprar {
+            display: block;                 /* Faz o botão ocupar a linha toda */
+            margin: 10px auto 0;           /* Centraliza e adiciona margem acima */
+            padding: 10px 20px;            /* Espaçamento interno */
+            background-color: #533a71;     /* Cor de fundo roxa escura */
+            color: white;                  /* Cor da fonte */
+            text-align: center;            /* Centraliza o texto */
+            text-decoration: none;         /* Remove sublinhado */
+            font-weight: bold;             /* Deixa o texto em negrito */
+            border-radius: 8px;            /* Arredonda os cantos */
+            transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+        }
+
+        .btn-comprar:hover {
+            background-color: #6b4ca7;     /* Cor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho fixo com menu de navegação -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🎵 Melody Store</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="empresa.html">Nossa Empresa</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Quem Somos</a></li>
+                    <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção de título da página -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Nossos Produtos</h1>
+                <p>Descubra nossa seleção exclusiva de produtos musicais</p>
+            </div>
+        </section>
+
+        <!-- Seção de CDs -->
+        <section class="content-section">
+            <div class="container">
+                <h2>💿 CDs Originais</h2>
+                <div class="produtos-grid">
+                    <!-- Cada produto é exibido dentro de um card com imagem, descrição e preço -->
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Dark_Side_of_the_Moon.png" alt="The Dark Side of the Moon - Pink Floyd">
+                        </div>
+                        <h3>The Dark Side of the Moon - Pink Floyd</h3>
+                        <p>Álbum clássico remasterizado com qualidade superior. Inclui livreto com letras e fotos raras.</p>
+                        <div class="preco">R$ 45,90</div>
+                        <a href="https://encurtador.com.br/6SX8w" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Thriller.jpg" alt="Thriller - Michael Jackson">
+                        </div>
+                        <h3>Thriller - Michael Jackson</h3>
+                        <p>O álbum mais vendido de todos os tempos em edição especial comemorativa.</p>
+                        <div class="preco">R$ 52,90</div>
+                        <a href="https://encurtador.com.br/f8g5j" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="beatles-abbey-road-capa-foto-iain-macmillan_widelg.jpg" alt="Abbey Road - The Beatles">
+                        </div>
+                        <h3>Abbey Road - The Beatles</h3>
+                        <p>Último álbum gravado pelos Beatles em versão remasterizada de 2019.</p>
+                        <div class="preco">R$ 48,90</div>
+                        <a href="https://encurtador.com.br/p4nXm" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+                
+                <h2>🔊 Caixas de Som e Áudio Profissional</h2>
+                <div class="produtos-grid">
+                    <!-- Caixa de som Bluetooth -->
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Amplficador.webp" alt="Caixa de Som Bluetooth JBL">
+                        </div>
+                        <h3>Cubo Marshall Gmg50 Fx Gold</h3>
+                        <p>Garanta timbres clássicos e modernos com estilo e qualidade Marshall, perfeito para prática e shows pequenos a médios.</p>
+                        <div class="preco">R$ 399,90</div>
+                        <a href="https://encurtador.com.br/lQhzM" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <!-- Fone profissional -->
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Novo_KZ_AS24_PRO_-_24_Drivers_HiFi_Profissionais.webp" alt="Fone Profissional de Estúdio">
+                        </div>
+                        <h3>Fone Profissional de Estúdio</h3>
+                        <p>Som balanceado e de alta qualidade para longas sessões.</p>
+                        <div class="preco">R$ 549,90</div>
+                        <a href="https://encurtador.com.br/OlHKM" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <!-- Novo fone adicionado -->
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="sony-wh1000xm5.webp" alt="Fone Sony WH-1000XM5">
+                        </div>
+                        <h3>Fone Sony WH-1000XM5</h3>
+                        <p>Cancelamento de ruído líder no mercado e som premium com conforto extremo.</p>
+                        <div class="preco">R$ 1.299,00</div>
+                        <a href="https://www.amazon.com.br/Sony-WH-1000XM5-cancelamento-otimizador-cristalinas/dp/B09XSDMT4F/ref=asc_df_B09XSDMT4F?mcid=b1d00d3e6bc63110b786e0a2904d0657&tag=googleshopp00-20&linkCode=df0&hvadid=709964502911&hvpos=&hvnetw=g&hvrand=11316562211328826993&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031466&hvtargid=pla-1658555545358&psc=1&language=pt_BR&gad_source=1" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- Seção 3: Instrumentos Musicais -->
+                <h2>🎸 Instrumentos Musicais</h2>
+                <div class="produtos-grid">
+                    <!-- Guitarra -->
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Guitarra_Fender.webp" alt="Guitarra Fender Stratocaster">
+                        </div>
+                        <h3>Guitarra Fender Stratocaster</h3>
+                        <p>Modelo clássico com som limpo e pegada confortável. Ideal para iniciantes e profissionais.</p>
+                        <div class="preco">R$ 3.499,00</div>
+                        <a href="https://www.mercadolivre.com.br/guitarra-fender-squier-debut-stratocaster-sunburst/p/MLB43327488?highlight=true&headerTopBrand=false#polycard_client=search-nordic&searchVariation=MLB43327488&wid=MLB4053776735&position=10&search_layout=grid&type=product&tracking_id=1ddbe653-0b15-44cf-a9a1-b8663dd3de31&sid=search" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <!-- Teclado -->
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Teclado Yamaha PSR-E373.avif" alt="Teclado Yamaha PSR-E373">
+                        </div>
+                        <h3>Teclado Yamaha PSR-E373</h3>
+                        <p>61 teclas sensíveis ao toque, centenas de timbres e ritmos. Perfeito para estudos.</p>
+                        <div class="preco">R$ 2.199,00</div>
+                        <a href="https://es.yamaha.com/es/products/musical_instruments/keyboards/portable_keyboards/psr-e373/index.html" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <!-- Novo instrumento adicionado -->
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Bateria Eletrônica Roland TD-1DMK.webp" alt="Bateria Eletrônica Roland TD-1DMK">
+                        </div>
+                        <h3>Bateria Eletrônica Roland TD-1DMK</h3>
+                        <p>Kit completo com pads de malha dupla e módulo com 15 kits prontos. Ideal para prática silenciosa.</p>
+                        <div class="preco">R$ 5.299,00</div>
+                        <a href="https://www.amazon.com.br/Kit-Bateria-Eletr%C3%B4nica-AROMA-TDX-18/dp/B0CYQ4QS8L/ref=asc_df_B0CYQ4QS8L?mcid=982095cf31a03f669cc1316a84909527&tag=googleshopp00-20&linkCode=df0&hvadid=709887777034&hvpos=&hvnetw=g&hvrand=1900762143986257825&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031466&hvtargid=pla-2298311691539&psc=1&language=pt_BR&gad_source=1" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- Vinis -->
+                <h2>🎵 Vinis Colecionáveis</h2>
+                <div class="produtos-grid">
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="LedZeppelinIV.jpg" alt="Led Zeppelin IV - Led Zeppelin">
+                        </div>
+                        <h3>Led Zeppelin IV - Led Zeppelin</h3>
+                        <p>Vinil 180g em edição limitada com áudio remasterizado e capa gatefold.</p>
+                        <div class="preco">R$ 189,90</div>
+                        <a href="https://www.amazon.com.br/Led-Zeppelin-Clear-Vinyl-ATL75/dp/B0CHWLYJLJ/ref=sr_1_1?crid=21DJKHVCKUBR3&dib=eyJ2IjoiMSJ9.7SM759AQrP_D5co_1a5zBOxLAVSDxNhtptocixDtofOiCQc9KrJv3cPrdYVXXpqSfTUgxesJC19QjtsEnUhwFuTONHAXlrPsqMpWnI2PeVf2yGaj68wy3SAuMwRXauzWVoKhMIuqaeQOPw9h15KsNsypWnWXvvQV7KCKhDKAAScxe6xVnr8Hh_7nbx0gYmAn-TUIMn2rg99dJKDWovAjf4O2beAm-BCFGpGVzsyI2sqo_rE56ex5MCoA30KZrnSwbb4qLriQHs5pdhl3tGjYtwG99RivphJOx5b8UMCM4UI.59FN5wfDRSAGVnUXvHEZs0jxbyOTubpwEkRyeptIn1I&dib_tag=se&keywords=led+zeppelin+iv+vinil&qid=1749144447&sprefix=Led+Zeppelin+IV+-+Led+Zeppelin%2Caps%2C177&sr=8-1&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Damn.jpg" alt="Damn - Kendrick Lamar">
+                        </div>
+                        <h3>Damn - Kendrick Lamar</h3>
+                        <p>Vinil de Damn com áudio de alta qualidade.</p>
+                        <div class="preco">R$ 165,90</div>
+                        <a href="https://www.amazon.com.br/Damn-Kendrick-Lamar/dp/B0716SPKYW" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="LifeOfPablo.jpg" alt="The Life of Pablo - Kanye West">
+                        </div>
+                        <h3>The life of Pablo - Kanye West</h3>
+                        <p>Clássico do Kanye em vinil de alta qualidade.</p>
+                        <div class="preco">R$ 145,90</div>
+                        <a href="https://www.recordslpsvinyl.com.au/product-page/kanye-west-the-life-of-pablo-double-orange-vinyl" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- Roupas -->
+                <h2>👕 Roupas e Acessórios</h2>
+                <div class="produtos-grid">
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="KSGHodie.jpg" alt="Blusa Kid See Ghost - Kanye West">
+                        </div>
+                        <h3>Blusa Kids See Ghost - Kanye West</h3>
+                        <p>Blusa 100% algodão com arte oficial da turnê mundial.</p>
+                        <div class="preco">R$ 229,90</div>
+                        <a href="https://stockx.com/kids-see-ghosts-freeee-hoodie-core" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Moleton_pinkfloyd.webp" alt="Moletom - Pink Floyd">
+                        </div>
+                        <h3>Moletom - Pink Floyd</h3>
+                        <p>Moletom premium, estampa do prisma e acabamento de alta qualidade.</p>
+                        <div class="preco">R$ 159,90</div>
+                        <a href="https://www.cluberock.com.br/products/moletom-pink-floyd-unissex?currency=BRL&variant=48397001359654&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=aedff7fb485c&utm_source=&utm_medium=&utm_campaign=&utm_content=&gad_source=1&gad_campaignid=21932670609&gbraid=0AAAAAqiwoH0fC2DidYecy7AlzHApT1Ybx&gclid=EAIaIQobChMIjOTA0d3ajQMVYKJaBR1UFQSnEAQYASABEgLcTPD_BwE" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-image">
+                            <img src="Mochila_musical.png" alt="Mochila Musical">
+                        </div>
+                        <h3>Mochila Musical</h3>
+                        <p>Mochila resistente com compartimentos especiais para CDs e equipamentos.</p>
+                        <div class="preco">R$ 89,90</div>
+                        <a href="https://store.roland.com.br/bag-tipo-mochila-para-transporte-de-equi-cb-ru10/p" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção sobre a qualidade dos produtos -->
+        <section class="about-preview">
+            <div class="container">
+                <h2>Garantia de Qualidade</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Todos os nossos produtos são originais e acompanham garantia. Trabalhamos apenas com fornecedores oficiais e oferecemos suporte completo pós-venda.</p>
+                        <a href="contato.html" class="btn-primary">Entre em Contato</a>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>30</h3>
+                            <p>Dias de Garantia</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24h</h3>
+                            <p>Suporte Técnico</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Produtos Originais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé com informações e links úteis -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>🎵 Melody Store</h3>
+                    <p>Sua loja de música completa</p>
+                    <p>Rua da Música, 123 - Centro<br>São Paulo - SP, 01010-000</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="empresa.html">Nossa Empresa</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-dev">
+                    <h4>Desenvolvimento</h4>
+                    <p><strong>Desenvolvido por:</strong> Carlos Henrique de Andrade</p>
+                    <p><strong>Curso:</strong> ADS</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Melody Store. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
