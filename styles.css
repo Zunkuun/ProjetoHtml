@@ -1,9 +1,11 @@
+/* Reset global - Remove estilos padrão do navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos base do corpo da página */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -12,13 +14,14 @@ body {
     min-height: 100vh;
 }
 
+/* Container principal para centralizar conteúdo */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header */
+/* Cabeçalho fixo com efeito glassmorphism */
 header {
     background: rgba(26, 26, 46, 0.95);
     backdrop-filter: blur(10px);
@@ -30,6 +33,7 @@ header {
     border-bottom: 2px solid #533a71;
 }
 
+/* Layout flexbox do container do header */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -37,6 +41,7 @@ header .container {
     padding: 1rem 20px;
 }
 
+/* Estilização do logo */
 .logo h1 {
     color: #a855f7;
     font-size: 1.8rem;
@@ -44,12 +49,14 @@ header .container {
     text-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
 }
 
+/* Menu de navegação principal */
 .main-nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
+/* Links do menu de navegação */
 .main-nav a {
     text-decoration: none;
     color: #e0e0e0;
@@ -60,6 +67,7 @@ header .container {
     border: 1px solid transparent;
 }
 
+/* Efeito hover dos links de navegação */
 .main-nav a:hover {
     background: linear-gradient(45deg, #a855f7, #6366f1);
     color: white;
@@ -68,13 +76,13 @@ header .container {
     border: 1px solid #a855f7;
 }
 
-/* Main Content */
+/* Conteúdo principal da página */
 main {
     margin-top: 80px;
     min-height: calc(100vh - 80px);
 }
 
-/* Hero Section */
+/* Seção hero (banner principal) */
 .hero {
     text-align: center;
     padding: 4rem 0;
@@ -85,6 +93,7 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Título principal do hero */
 .hero h2 {
     font-size: 2.8rem;
     color: #a855f7;
@@ -92,6 +101,7 @@ main {
     text-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
 }
 
+/* Subtítulo do hero */
 .hero p {
     font-size: 1.3rem;
     color: #b0b0b0;
@@ -101,32 +111,37 @@ main {
     margin-right: auto;
 }
 
+/* Container da imagem do hero */
 .hero-image {
     margin: 2rem 0;
 }
 
+/* Ícone musical animado */
 .music-icon {
     font-size: 6rem;
     opacity: 0.8;
     animation: float 3s ease-in-out infinite;
 }
 
+/* Animação de flutuação */
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
 }
 
-/* Features Section */
+/* Seção de funcionalidades */
 .features {
     padding: 3rem 0;
 }
 
+/* Grid responsivo das funcionalidades */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
+/* Card individual de funcionalidade */
 .feature-card {
     background: rgba(26, 26, 46, 0.8);
     padding: 2rem;
@@ -137,30 +152,34 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Efeito hover do card de funcionalidade */
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
     border: 1px solid #a855f7;
 }
 
+/* Ícone da funcionalidade */
 .feature-icon {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     display: block;
 }
 
+/* Título do card de funcionalidade */
 .feature-card h3 {
     color: #a855f7;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
+/* Descrição do card de funcionalidade */
 .feature-card p {
     color: #b0b0b0;
     line-height: 1.6;
 }
 
-/* About Preview Section */
+/* Seção de preview sobre a empresa */
 .about-preview {
     padding: 3rem 0;
     background: rgba(15, 52, 96, 0.3);
@@ -168,6 +187,7 @@ main {
     margin: 2rem 0;
 }
 
+/* Título da seção sobre */
 .about-preview h2 {
     text-align: center;
     color: #a855f7;
@@ -175,6 +195,7 @@ main {
     margin-bottom: 2rem;
 }
 
+/* Layout grid do conteúdo sobre */
 .about-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -182,6 +203,7 @@ main {
     align-items: center;
 }
 
+/* Texto da seção sobre */
 .about-text p {
     color: #b0b0b0;
     font-size: 1.1rem;
@@ -189,6 +211,7 @@ main {
     line-height: 1.7;
 }
 
+/* Botão principal com gradiente */
 .btn-primary {
     display: inline-block;
     background: linear-gradient(45deg, #a855f7, #6366f1);
@@ -201,17 +224,20 @@ main {
     box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
 }
 
+/* Efeito hover do botão principal */
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4);
 }
 
+/* Container das estatísticas */
 .stats {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
+/* Card individual de estatística */
 .stat {
     text-align: center;
     padding: 1.5rem;
@@ -220,18 +246,20 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Número da estatística */
 .stat h3 {
     font-size: 2.2rem;
     color: #a855f7;
     margin-bottom: 0.5rem;
 }
 
+/* Descrição da estatística */
 .stat p {
     color: #b0b0b0;
     font-size: 0.9rem;
 }
 
-/* Page Headers */
+/* Cabeçalho das páginas internas */
 .page-header {
     text-align: center;
     padding: 3rem 0;
@@ -241,6 +269,7 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Título do cabeçalho da página */
 .page-header h1 {
     font-size: 2.5rem;
     color: #a855f7;
@@ -248,6 +277,7 @@ main {
     text-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
 }
 
+/* Subtítulo do cabeçalho da página */
 .page-header p {
     font-size: 1.2rem;
     color: #b0b0b0;
@@ -255,7 +285,7 @@ main {
     margin: 0 auto;
 }
 
-/* Content Sections */
+/* Seções de conteúdo genéricas */
 .content-section {
     background: rgba(26, 26, 46, 0.8);
     padding: 2.5rem;
@@ -265,41 +295,47 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Título h2 das seções de conteúdo */
 .content-section h2 {
     color: #a855f7;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
 
+/* Título h3 das seções de conteúdo */
 .content-section h3 {
     color: #6366f1;
     margin-bottom: 1rem;
     font-size: 1.4rem;
 }
 
+/* Título h4 das seções de conteúdo */
 .content-section h4 {
     color: #8b5cf6;
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
 }
 
+/* Parágrafos das seções de conteúdo */
 .content-section p {
     color: #b0b0b0;
     margin-bottom: 1rem;
     line-height: 1.7;
 }
 
+/* Listas das seções de conteúdo */
 .content-section ul {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
 }
 
+/* Itens das listas */
 .content-section li {
     color: #b0b0b0;
     margin-bottom: 0.5rem;
 }
 
-/* Products Grid */
+/* Grid dos produtos */
 .produtos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -307,6 +343,7 @@ main {
     margin: 2rem 0;
 }
 
+/* Card individual de produto */
 .produto-card {
     background: rgba(26, 26, 46, 0.8);
     padding: 2rem;
@@ -317,29 +354,34 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Efeito hover do card de produto */
 .produto-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
     border: 1px solid #a855f7;
 }
 
+/* Imagem/ícone do produto */
 .produto-image {
     font-size: 4rem;
     margin-bottom: 1rem;
     display: block;
 }
 
+/* Título do produto */
 .produto-card h3 {
     color: #a855f7;
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
 }
 
+/* Descrição do produto */
 .produto-card p {
     color: #b0b0b0;
     margin-bottom: 1rem;
 }
 
+/* Preço do produto */
 .preco {
     color: #10b981;
     font-weight: bold;
@@ -347,7 +389,7 @@ main {
     text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
 }
 
-/* Contact Grid */
+/* Grid de contato */
 .contato-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -355,6 +397,7 @@ main {
     margin: 2rem 0;
 }
 
+/* Card de informações de contato */
 .contato-card {
     background: rgba(26, 26, 46, 0.8);
     padding: 2rem;
@@ -363,27 +406,32 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Título do card de contato */
 .contato-card h3 {
     color: #a855f7;
     margin-bottom: 1.5rem;
 }
 
+/* Item individual de contato */
 .contato-item {
     margin-bottom: 1.5rem;
 }
 
+/* Label dos itens de contato */
 .contato-item strong {
     color: #6366f1;
     display: block;
     margin-bottom: 0.5rem;
 }
 
+/* Container dos links sociais */
 .social-links {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
 }
 
+/* Links das redes sociais */
 .social-link {
     text-decoration: none;
     color: #b0b0b0;
@@ -393,13 +441,14 @@ main {
     border: 1px solid #533a71;
 }
 
+/* Efeito hover dos links sociais */
 .social-link:hover {
     background: rgba(168, 85, 247, 0.1);
     color: #a855f7;
     border: 1px solid #a855f7;
 }
 
-/* Work Cards */
+/* Grid das vagas de trabalho */
 .vagas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -407,6 +456,7 @@ main {
     margin: 2rem 0;
 }
 
+/* Card individual de vaga */
 .vaga-card {
     background: rgba(15, 52, 96, 0.3);
     padding: 2rem;
@@ -415,21 +465,24 @@ main {
     transition: all 0.3s ease;
 }
 
+/* Efeito hover do card de vaga */
 .vaga-card:hover {
     border: 1px solid #a855f7;
     box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);
 }
 
+/* Título da vaga */
 .vaga-card h4 {
     color: #a855f7;
     margin-bottom: 1rem;
 }
 
+/* Descrição da vaga */
 .vaga-card p {
     color: #b0b0b0;
 }
 
-/* Footer */
+/* Rodapé da página */
 footer {
     background: rgba(26, 26, 46, 0.95);
     color: #e0e0e0;
@@ -438,6 +491,7 @@ footer {
     border-top: 2px solid #533a71;
 }
 
+/* Conteúdo principal do rodapé */
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -445,51 +499,61 @@ footer {
     margin-bottom: 2rem;
 }
 
+/* Títulos das informações do rodapé */
 .footer-info h3 {
     color: #a855f7;
     margin-bottom: 1rem;
     text-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
 }
 
+/* Parágrafos das informações do rodapé */
 .footer-info p {
     color: #b0b0b0;
     margin-bottom: 0.5rem;
 }
 
+/* Títulos dos links do rodapé */
 .footer-links h4 {
     color: #6366f1;
     margin-bottom: 1rem;
 }
 
+/* Lista de links do rodapé */
 .footer-links ul {
     list-style: none;
 }
 
+/* Itens da lista de links */
 .footer-links li {
     margin-bottom: 0.5rem;
 }
 
+/* Links do rodapé */
 .footer-links a {
     color: #b0b0b0;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/* Efeito hover dos links do rodapé */
 .footer-links a:hover {
     color: #a855f7;
 }
 
+/* Seção de créditos do desenvolvedor */
 .footer-dev h4 {
     color: #6366f1;
     margin-bottom: 1rem;
 }
 
+/* Texto dos créditos do desenvolvedor */
 .footer-dev p {
     color: #b0b0b0;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
 
+/* Rodapé inferior com copyright */
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -497,7 +561,7 @@ footer {
     color: #888;
 }
 
-/* Responsive Design */
+/* Media query para tablets */
 @media (max-width: 768px) {
     .main-nav ul {
         flex-direction: column;
@@ -530,8 +594,9 @@ footer {
     }
 }
 
+/* Media query para dispositivos móveis */
 @media (max-width: 480px) {
-    header .container {
+    .header .container {
         flex-direction: column;
         gap: 1rem;
     }
